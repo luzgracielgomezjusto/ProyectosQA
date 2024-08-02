@@ -17,7 +17,7 @@ class EmployeePage {
         console.log('Employee form submitted');
         /*await this.page.waitForSelector();*/
         //Esperar que se guarde el cambio y cambie la url
-        await this.page.waitForURL('**/viewEmployeeList', {timeout: 60000});
+        await this.page.waitForURL('**/viewEmployeeList', {timeout: 60000}); 
     }
 
     async verifyEmployee(firstName, lastName) {
@@ -29,4 +29,4 @@ class EmployeePage {
     }
 }
 
-module.exports = EmployeePage;
+module.exports = EmployeePage; 

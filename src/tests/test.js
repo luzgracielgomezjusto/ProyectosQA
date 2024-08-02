@@ -18,5 +18,5 @@ const EmployeePage = require('../pages/employeePage');
     const isEmployeeCreated = await employeePage.verifyEmployee('Luz', 'Gomez');
     console.log(isEmployeeCreated ? 'Employee created successfully' : 'Employee creation failed');
 
-    await browser.close();
+    await browser.close(); 
 })();
