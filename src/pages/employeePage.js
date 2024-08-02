@@ -5,7 +5,9 @@ class EmployeePage {
 
     async addEmployee(firstName, lastName, empId) {
         //Menu PIM
-        await this.page.waitForSelector('a[href="/web/index.php/pim/viewEmployeeList"]', { visible: true, timeout: 60000 });
+        //await this.page.waitForSelector('a[href="/web/index.php/pim/viewEmployeeList"]', { visible: false, timeout: 60000 });
+        await this.page.waitForSelector('a[href*="pim"]', { visible: true, timeout: 60000 });
+        //await this.page.click('a[href="/web/index.php/pim/viewEmployeeList"]');
 
         await this.page.waitForSelector('a[href="/web/index.php/pim/addEmployee"]', { visible: true, timeout: 60000 })
         await this.page.click('a[href="/web/index.php/pim/addEmployee"]');

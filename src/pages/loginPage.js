@@ -14,7 +14,7 @@ class LoginPage {
 
         console.log('Login submitted');
         /*await this.page.waitForNavigation();*/
-        await this.page.waitForURL('**/dashboard/index', {timeout: 60000}); 
+        await this.page.waitForURL('**/dashboard', {timeout: 60000}); 
         console.log('Current URL:', this.page.url());
 
     }
